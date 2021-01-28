@@ -1,0 +1,13 @@
+let [a,b,c] = [1,2,3];
+[a,b,c] = [c,b,a];
+let number1 = prompt('give first number to sum up');
+let number2 = prompt('give second number to sum up');
+alert('sum of ur numbas be' + (Number(number1) + Number(number2)));
+
+// Fast code golf refactor
+(_=>{i=2;p=0;while(i>0){--i;p+=Number(prompt('n'))}alert(p)})()
+(_=>{age=prompt('age?');alert(age>17?'Welcome!':'You are too young.')})()
+
+  //
+
+

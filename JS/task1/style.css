@@ -1,0 +1,10 @@
+body {
+  color: khaki;
+  background-color: lightcoral;
+  font-size: 200%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif;
+}
+
+#time-here {
+  color: maroon;
+}

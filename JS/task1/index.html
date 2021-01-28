@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js lesson 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hi, reader!</h1>
+    <p>You've been here for:
+    <div id="time-here"></div>
+    <p>seconds</p>
+  </p>
+    <script>
+      let seconds = 0;
+      let timeHere = document.querySelector("#time-here");
+      setInterval(timeInterval = () => {
+        timeHere.innerText = seconds / 1000;
+        seconds += 1000;
+      }, 1000);
+
+    </script>
+  <button id="stop-timer" onclick="clearInterval(timeInterval)">stop time?</button>
+    <script src="script.js"></script>
+  </body>
+</html>

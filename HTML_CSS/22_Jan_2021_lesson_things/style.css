@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 255, 255, 0.5);
+  font-family: cursive;
+  color: peachpuff;
+  font-size: 130%;
+  text-align: justify;
+}
+
+nav a {
+  margin-left: 20%;
+}
+ul {
+  list-style: square;
+}
+li {
+  display: inline;
+}
+a {
+  color: lavender;
+  text-decoration: double;
+}
+img {
+  border-radius: 10px;
+  opacity: 50%;
+}
+header {
+  background-color: rgba(0, 255, 255, 0.9);
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+table {
+  border: 5px ridge peachpuff;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+table td {
+  border: 3px solid peachpuff;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-color: aquamarine;
+  margin: 50px auto;
+  border-radius: 5px;
+}
