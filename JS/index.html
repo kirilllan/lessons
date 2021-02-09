@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9_Feb_task</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: wheat;
+        height: 100%;
+        font-family: cursive;
+      }
+      section {
+        color: midnightblue;
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .car-models {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body onclick="console.log('%cXOXO', 'color:crimson;font-size:70px')">
+    <section class="car-adding-section">
+      <label for="license-plate">License plate number:</label>
+      <input type="text" name="license-plate" id="license-plate" />
+      <label for="car-maker">Car maker:</label>
+      <select name="car-maker" id="car-maker">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        <option value="toy-car">toys r us</option>
+      </select>
+      <label for="model">Model:</label>
+      <input type="text" name="model" id="model" />
+      <label for="price">Price:</label>
+      <input type="text" name="price" id="price" />
+      <label for="color">Color</label>
+      <input type="color" name="color" id="color" />
+      <button type="submit" class="submit">Add a new car</button>
+      <button class="clear">X Clear X</button>
+    </section>
+    <div class="car-models"></div>
+  </body>
+</html>
