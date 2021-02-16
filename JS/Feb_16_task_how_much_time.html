@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feb_16 task</title>
+    <style>
+      body {
+        height: 100%;
+        background-color: mediumpurple;
+      }
+      .wrapper {
+        margin: 50px;
+        padding: 50px;
+        margin-top: 150px;
+        color: mediumspringgreen;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script defer src="script2.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="date-thing">
+        <label for="usersDate2">Start date (OPTIONAL): </label>
+        <input type="date" name="usersDate2" id="usersDate2" />
+        <label for="usersDate">Your end date: </label>
+        <input type="date" name="usersDate" id="usersDate" />
+        <label for="usersEvent">Events name: </label>
+        <input type="text" name="usersEvent" id="usersEvent" />
+      </section>
+      <button type="submit" class="submit-Button1">Calculate</button>
+      <div class="calculated"></div>
+      <div class="calculated2"></div>
+      <div class="calculated3"></div>
+      <div class="calculated4"></div>
+      <div class="calculated5"></div>
+    </div>
+  </body>
+</html>
