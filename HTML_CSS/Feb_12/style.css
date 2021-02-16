@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: red;
+  font-size: 1.2rem;
+}
+header {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: coral;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  background-color: green;
+}
+li:first-child {
+  background-color: blue;
+}
+li:first-child a {
+  color: bisque;
+}
+li:nth-child(2) {
+  color: brown;
+}
+li:nth-child(2n) {
+  background-color: brown;
+}
+li:last-child {
+  color: blue;
+  background-color: blue;
+}
+
+button::before {
+  content: "here is invisible text";
+}
+
+section {
+  height: 25vh;
+  background: url("https://image.shutterstock.com/z/stock-vector-low-res-pixel-art-xmas-icons-with-deer-christmas-tree-snowman-santa-gift-and-elf-1251304243.jpg")
+    no-repeat fixed center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::after {
+  content: "";
+  background-color: rgba(255, 0, 0, 0.2);
+  height: 30%;
+  width: 100%;
+  position: absolute;
+}
