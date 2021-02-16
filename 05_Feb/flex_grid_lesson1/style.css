@@ -1,0 +1,55 @@
+body {
+  background-color: lightsteelblue;
+  color: white;
+}
+header {
+  padding: 10px;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+img {
+  width: 100%;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 0.7em;
+  box-shadow: 0px 0px 25px navy;
+  overflow: hidden;
+}
+
+#hero-banner {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background: url("https://source.unsplash.com/ebHCU8n7G38") no-repeat center
+    center/cover;
+}
+
+@media screen and (max-width: 520px) {
+  section {
+    flex-direction: column;
+  }
+}
