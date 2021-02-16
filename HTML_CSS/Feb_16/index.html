@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Feb_16</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        color: wheat;
+      }
+      body {
+        font-family: cursive, sans-serif;
+        background-color: whitesmoke;
+      }
+      header,
+      section,
+      footer {
+        padding: 2rem;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        background-color: lightsteelblue;
+        width: 100%;
+        top: 0;
+      }
+      #mobileButton {
+        display: none;
+      }
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      section {
+        min-height: 50vh;
+      }
+      section:first-child {
+        margin-top: 100px;
+        background-color: azure;
+      }
+      section:nth-child(2) {
+        background-color: lightskyblue;
+      }
+      section:last-child {
+        background-color: midnightblue;
+      }
+      footer {
+        background-color: lightslategray;
+      }
+      .bg {
+        background-color: #333;
+      }
+      .bg a {
+        color: white;
+      }
+      #back-to-top {
+        background-color: chocolate;
+        border-radius: 5px;
+        padding: 1rem;
+        border: none;
+        padding: 1rem;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+      }
+      .material-icons {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 576px) {
+        #mobileButton {
+          display: block;
+        }
+        nav ul {
+          display: none;
+        }
+        nav ul.responsive {
+          display: block;
+          background-color: white;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 86px;
+        }
+        nav ul li {
+          display: block;
+        }
+        nav ul li a {
+          display: block;
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">My demo</div>
+      <nav>
+        <a href="#" id="mobileButton"
+          ><span class="material-icons">menu</span></a
+        >
+        <ul>
+          <li><a href="#first">First</a></li>
+          <li><a href="#second">Second</a></li>
+          <li><a href="#third">Third</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="first">First</section>
+      <section id="second">Second</section>
+      <section id="third">Third</section>
+    </main>
+    <footer id="contact">
+      <button id="back-to-top">
+        Top
+        <span class="material-icons">arrow_upward</span>
+      </button>
+      Copyrights
+    </footer>
+  </body>
+</html>
