@@ -1,0 +1,112 @@
+:root {
+  --element-color: radial-gradient(rgb(200, 200, 250), rgb(150, 150, 200));
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to bottom,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+body:hover {
+  transform: rotate(360deg);
+}
+
+.card {
+  height: 300px;
+  width: 200px;
+  background-image: radial-gradient(blue, darkblue);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px #444;
+  transform: rotate(360deg);
+  transform: skewX(150deg);
+  /*transform: perspective(2000px) rotateX(90deg);*/
+}
+
+.circle {
+  background-image: var(--element-color);
+  height: 150px;
+  width: 150px;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  animation-name: xmpl;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  position: relative;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  text-align: left;
+}
+
+.underline h1::after {
+  content: "";
+  height: 5px;
+  width: 0;
+  display: block;
+  background: green;
+  transition: 1s ease-in all;
+}
+
+.underline:hover h1::after {
+  width: 100%;
+}
+/* @keyframes xmpl {
+  from {
+    background: blue;
+  }
+  to {
+    background: green;
+  }
+} */
+
+@keyframes xmpl {
+  0% {
+    background: blue;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background: green;
+    top: 0;
+    left: 100px;
+  }
+  50% {
+    background: chocolate;
+    top: 100px;
+    left: 100px;
+  }
+  75% {
+    background: papayawhip;
+    top: 100px;
+    left: 0;
+  }
+  100% {
+    background: orangered;
+    top: 0;
+    left: 0;
+  }
+}
