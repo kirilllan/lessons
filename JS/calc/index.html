@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="input" id="input"></div>
+      <div class="buttons">
+        <div class="operators">
+          <div id="plus">+</div>
+          <div id="minus">-</div>
+          <div id="times">&times;</div>
+          <div id="divide">&divide;</div>
+        </div>
+        <div class="leftPanel">
+          <div class="numbers">
+            <div onclick="number1+=7">7</div>
+            <div onclick="number1+=8">8</div>
+            <div onclick="number1+=9">9</div>
+          </div>
+          <div class="numbers">
+            <div onclick="number1+=4">4</div>
+            <div onclick="number1+=5">5</div>
+            <div onclick="number1+=6">6</div>
+          </div>
+          <div class="numbers">
+            <div onclick="number1+=1">1</div>
+            <div onclick="number1+=2">2</div>
+            <div onclick="number1+=3">3</div>
+          </div>
+          <div class="numbers">
+            <div onclick="number1+=0">0</div>
+            <div onclick="number1+='.'">.</div>
+            <div id="clear">C</div>
+          </div>
+        </div>
+        <div class="equal" id="equal">=</div>
+      </div>
+    </div>
+  </body>
+</html>
