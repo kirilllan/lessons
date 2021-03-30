@@ -4,6 +4,7 @@
   </head>
   <body>
     <?php 
+
     
 class Jckpot{
   public $five0or1 = [];
