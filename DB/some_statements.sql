@@ -23,3 +23,9 @@ select min(yearOfBirth) as oldest, max(yearOfBirth) as youngest from superhero;
 select year(current_date) - min(yearofbirth) as greatestage from superhero;
 select name from superhero where yearofbirth=(select min(yearofbirth)from superhero);
 select name , year(current_date) - yearOfBirth as age from superhero order by age asc;
+
+insert into superhero values('VAL,VAL,VAL || NULL?');
+DELETE FROM SUPERHERO WHERE HEROID=5;
+DELETE FROM SUPERHERO WHERE NAME='SUPER%MORON' OR GEAR='CAPEX';
+DELETE FROM SUPERHERO; --EVERYTHING!!! --delete everything from a table.
+DROP DATABASE SUPERHERODB; --delete db, bb;
